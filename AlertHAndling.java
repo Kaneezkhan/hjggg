@@ -11,7 +11,7 @@ public class AlertHAndling
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Selenium Jars\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+
 		driver.get("http://demo.automationtesting.in/Alerts.html");
 		driver.findElement(By.xpath("//*[@id=\"OKTab\"]/button")).click();
 		driver.switchTo().alert().accept();
